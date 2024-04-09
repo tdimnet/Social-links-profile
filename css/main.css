@@ -14,13 +14,10 @@ img {
     width: 100%;
 }
 
-p {
-    font-size: 1rem;
-}
-
 body {
     background-color: var(--off-black);
     color: var(--white);
+    font-family: "Inter", sans-serif;
 }
 
 main {
@@ -35,4 +32,17 @@ main {
     height: 5.5rem;
     width: auto;
     border-radius: 50%;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+.location {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.description {
+    font-size: 0.875rem;
 }
