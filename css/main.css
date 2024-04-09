@@ -18,6 +18,10 @@ body {
     background-color: var(--off-black);
     color: var(--white);
     font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
@@ -45,4 +49,26 @@ h1 {
 
 .description {
     font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.links-wrapper {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+.link a {
+    color: var(--white);
+    text-decoration: none;
 }
