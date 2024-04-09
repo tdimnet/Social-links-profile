@@ -1,9 +1,9 @@
 :root {
-    --green: hsl(75, 94%, 57%);
-    --white: hsl(0, 0%, 100%);
-    --grey: hsl(0, 0%, 20%);
     --dark-grey: hsl(0, 0%, 12%);
+    --green: hsl(75, 94%, 57%);
+    --grey: hsl(0, 0%, 20%);
     --off-black: hsl(0, 0%, 8%);
+    --white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -15,27 +15,27 @@ img {
 }
 
 body {
+    align-items: center;
     background-color: var(--off-black);
     color: var(--white);
-    font-family: "Inter", sans-serif;
-    min-height: 100vh;
     display: flex;
-    align-items: center;
+    font-family: "Inter", sans-serif;
     justify-content: center;
+    min-height: 100vh;
 }
 
 main {
     background-color: var(--dark-grey);
-    padding: 1.5rem;
-    margin: 1.5rem;
     border-radius: 0.75rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
     text-align: center;
 }
 
 .profile-picture {
+    border-radius: 50%;
     height: 5.5rem;
     width: auto;
-    border-radius: 50%;
 }
 
 h1 {
@@ -53,22 +53,28 @@ h1 {
 }
 
 .links-wrapper {
-    padding-left: 0;
     list-style-type: none;
+    padding-left: 0;
 }
 
 .link {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--grey);
-    margin-bottom: 1rem;
     border-radius: .5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
 }
 
 .link a {
+    background-color: var(--grey);
     color: var(--white);
+    display: block;
+    font-weight: 700;
+    padding-bottom: .75rem;
+    padding-top: .75rem;
     text-decoration: none;
+    transition: .4s;
+
+    &:hover {
+        background-color: var(--green);
+        color: var(--off-black);
+    }
 }
