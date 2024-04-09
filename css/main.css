@@ -15,5 +15,24 @@ img {
 }
 
 p {
-    font-size: 14px;
+    font-size: 1rem;
+}
+
+body {
+    background-color: var(--off-black);
+    color: var(--white);
+}
+
+main {
+    background-color: var(--dark-grey);
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.profile-picture {
+    height: 5.5rem;
+    width: auto;
+    border-radius: 50%;
 }
